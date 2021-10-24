@@ -21,10 +21,14 @@ ul,
 p {
   margin: 0;
 }
+
 ul {
   padding-inline-start: 0;
 }
 ul[class] {
+  list-style: none;
+}
+li {
   list-style: none;
 }
 
@@ -182,6 +186,21 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.text-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: transparent;
+}
+.icon-link {
+  height: 70px;
+  width: 70px;
+}
 .text-list {
   display: flex;
   justify-content: space-between;
@@ -227,6 +246,45 @@ a {
 .team-section {
   background-color: var(--button-list-color);
 }
+.team-social-networks {
+  display: flex;
+  height: 44px;
+  width: 206px;
+  margin: 16px 32px 30px 32px;
+
+  align-items: center;
+}
+
+.team-social-networks-list {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+.social-link {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-link:hover {
+  background-color: var(--hover-color);
+}
+.social-link:hover .team-social-networks-link {
+  fill: var(--third-text-color);
+}
+
+.team-social-networks-link {
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team-social-networks-list:last-child {
+  margin-right: 0;
+}
+
 .team-text {
   font-weight: 700;
   font-size: 36px;
@@ -250,7 +308,6 @@ a {
 }
 .team {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .team-workers-name {
   font-weight: 500;
@@ -258,6 +315,7 @@ a {
   line-height: 1.19;
   color: var(--main-text-color);
   text-align: center;
+  letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -266,8 +324,43 @@ a {
   line-height: 1.17;
   color: var(--second-text-color);
   text-align: center;
+  letter-spacing: 0.03em;
   margin: 0;
 }
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-link:hover{
+  background-color: #ffffff;
+   border: 1px solid var(--hover-color) ;
+}
+
+.clients-link:hover .clients-icon {
+  fill: #2196f3;
+ 
+}
+.clients-icon {
+  width: 106px;
+  height: 60px;
+ fill: #afb1b8; 
+}
+
 .footer {
   background-color: var(--background-color);
 
