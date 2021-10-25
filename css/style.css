@@ -314,7 +314,8 @@ a {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--hover-color);
 }
 
@@ -381,6 +382,8 @@ a {
   width: 170px;
   height: 92px;
 }
+
+
 
 .clients-link {
   display: flex;
