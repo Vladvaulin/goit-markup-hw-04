@@ -304,7 +304,7 @@ img {
 .social-link:focus,
 .social-link:focus-visible {
   background-color: var(--hover-color);
-   outline:  var(--hover-color);
+   outline: none;
 }
 .social-link:hover .team-social-networks-link,
 .social-link:focus .team-social-networks-link {
@@ -325,7 +325,7 @@ img {
 .footer-social-link:focus {
   background-color: var(--hover-color);
   border-color: #2196f3;
-   outline:  var(--hover-color);
+   outline: none;
 }
 
 .footer-social-link:hover .team-social-networks-link,
@@ -409,7 +409,7 @@ img {
 .clients-link:focus-visible {
   background-color: #ffffff;
   border: 1px solid var(--hover-color);
-   outline:   var(--hover-color);
+   outline: none;
 }
 
 .clients-link:hover .clients-icon,
