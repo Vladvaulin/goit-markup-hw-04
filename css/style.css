@@ -100,12 +100,14 @@ img {
   color: var(--hover-color);
 }
 .header-link-item:focus,
-.header-link-item:hover {
+.header-link-item:hover,
+.header-link-item:focus-visible {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--hover-color);
+  outline: none;
 }
 
 .header-phone-svg {
@@ -137,6 +139,10 @@ img {
 .contacts-link:focus .header-svg {
   fill: var(--hover-color);
   color: #2196f3;
+  
+}
+.contacts-link:focus-visible {
+  outline: none;
 }
 
 .contacts-link:hover .header-phone-svg,
@@ -221,6 +227,9 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.hero-button:focus-visible{
+  outline: none;
+}
 .text-icon {
   display: flex;
   align-items: center;
@@ -304,7 +313,7 @@ img {
 .social-link:focus,
 .social-link:focus-visible {
   background-color: var(--hover-color);
-   outline: none;
+  outline: none;
 }
 .social-link:hover .team-social-networks-link,
 .social-link:focus .team-social-networks-link {
@@ -325,7 +334,7 @@ img {
 .footer-social-link:focus {
   background-color: var(--hover-color);
   border-color: #2196f3;
-   outline: none;
+  outline: none;
 }
 
 .footer-social-link:hover .team-social-networks-link,
@@ -409,7 +418,7 @@ img {
 .clients-link:focus-visible {
   background-color: #ffffff;
   border: 1px solid var(--hover-color);
-   outline: none;
+  outline: none;
 }
 
 .clients-link:hover .clients-icon,
@@ -472,8 +481,10 @@ img {
   color: var(--second-text-color);
 }
 .footer-contacts:hover,
-.footer-contacts:focus {
+.footer-contacts:focus,
+.footer-contacts:focus-visible {
   color: var(--hover-color);
+  outline: none;
 }
 .address-name {
   font-style: inherit;
@@ -512,7 +523,8 @@ img {
   margin-bottom: 50px;
 }
 .button-item:hover,
-.button-item:focus {
+.button-item:focus,
+.button-item:focus-visible {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -523,6 +535,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  outline: none;
 }
 
 /* .main-list {
@@ -544,10 +557,12 @@ img {
 }
 
 .list-link:hover,
-.list-link:focus {
+.list-link:focus,
+.list-link:focus-visible {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
 }
 
 .main-list {
