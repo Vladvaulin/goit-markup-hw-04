@@ -322,8 +322,7 @@ img {
   background: rgba(255, 255, 255, 0.1);
 }
 .footer-social-link:hover,
-.footer-social-link:focus,
-.footer-social-link:focus-visible {
+.footer-social-link:focus {
   background-color: var(--hover-color);
   border-color: #2196f3;
    outline:  var(--hover-color);
